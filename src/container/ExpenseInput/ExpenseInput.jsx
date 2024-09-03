@@ -17,7 +17,7 @@ export function ExpenseInput(props) {
           <input
             type="text"
             className="form-control"
-            placeholder='Ex : "Apple"'
+            placeholder='Ex : "Pomme"'
             name="name"
           />
         </div>
@@ -26,14 +26,14 @@ export function ExpenseInput(props) {
             type="number"
             step="0.01"
             className="form-control"
-            placeholder="Ex: 3.99"
+            placeholder="Ex: 200"
             name="price"
           />
         </div>
 
         <div className="col-12 col-sm-2 col-md-4 col-lg-4 mb-2">
           <button type="submit" className={`btn btn-primary ${s.btn}`}>
-            Add
+            Ajouter
           </button>
         </div>
       </div>

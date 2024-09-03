@@ -5,15 +5,22 @@ export const expenseSlice = createSlice({
   initialState: {
     // state initiale
     expenseList: [],
+    income: 1000,
   },
   reducers: {
     addExpence: (currentSlice, action) => {
-      currentSlice.expenseList.push(action.payload);
+      currentSlice.expenseList.push({
+        ...action.payload,
+        price: Number.parseFloat(action.payload.price),
+      });
       // console.log("addExpence()", action.payload);
     }, // action.payload est recuperer dans le dispatch
+    setIncome: (currentSlice, action) => {
+      currentSlice.income = Number.parseFloat(action.payload);
+    },
   },
 });
 
-const { addExpence } = expenseSlice.actions;
+const { addExpence, setIncome } = expenseSlice.actions;
 
-export { addExpence };
+export { addExpence, setIncome };
