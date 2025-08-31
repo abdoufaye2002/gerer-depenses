@@ -13,4 +13,3 @@ export function List({ items }) {
     </div>
   );
 }
-//
