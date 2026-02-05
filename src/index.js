@@ -14,3 +14,4 @@ root.render(
     </PersistGate>
   </Provider>
 );
+// code with mini factory is import "./global.css"
