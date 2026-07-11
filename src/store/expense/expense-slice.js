@@ -24,4 +24,3 @@ export const expenseSlice = createSlice({
 const { addExpence, setIncome } = expenseSlice.actions;
 
 export { addExpence, setIncome };
-//
