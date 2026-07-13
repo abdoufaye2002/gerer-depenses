@@ -25,4 +25,4 @@ const { addExpence, setIncome } = expenseSlice.actions;
 
 export { addExpence, setIncome };
 
-//mmm
+//m
