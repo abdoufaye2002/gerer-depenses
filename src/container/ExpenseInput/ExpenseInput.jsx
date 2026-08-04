@@ -40,4 +40,3 @@ export function ExpenseInput(props) {
     </form>
   );
 }
-//
